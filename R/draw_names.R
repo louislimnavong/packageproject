@@ -6,6 +6,7 @@
 #' @import dplyr
 #' @import dygraphs
 #' @import tidyr
+#' @import assertthat
 #'
 #' @return a plot
 #' @export
@@ -14,6 +15,7 @@
 #' draw_names(c("Diane","Vincent"))
 
 draw_names <- function(names){
+  assert_that(is.character(names))
 
   prenoms::prenoms %>%
     group_by(year,name) %>%
