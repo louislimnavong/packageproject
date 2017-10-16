@@ -11,4 +11,8 @@ RoxygenNote: 6.0.1
 Imports: readxl,
     assertthat,
     forcats,
-    dplyr
+    dplyr,
+    prenoms,
+    ggplot2,
+    dygraphs,
+    tidyr
