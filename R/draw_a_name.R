@@ -7,6 +7,7 @@
 #' @import dplyr
 #' @import dygraphs
 #' @import tidyr
+#' @import assertthat
 #'
 #' @return a plot
 #' @export
@@ -14,7 +15,11 @@
 #' @examples
 #' draw_a_name(the_name = "Vincent",the_sex = "M")
 
+
 draw_a_name <- function(the_name,the_sex){
+  assert_that(is.character(the_name))
+  assert_that(the_sex %in% c("M","F"))
+
   prenoms::prenoms %>%
     filter(name == the_name,sex == the_sex) %>%
     group_by(year) %>%
