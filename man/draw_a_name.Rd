@@ -18,5 +18,7 @@ a plot
 Plot the evolution of the numbers of time per year a name was given since 1900
 }
 \examples{
+
 draw_a_name(the_name = "Vincent",the_sex = "M")
+
 }

@@ -13,7 +13,9 @@
 #' @export
 #'
 #' @examples
+#'
 #' draw_a_name(the_name = "Vincent",the_sex = "M")
+#'
 
 
 draw_a_name <- function(the_name,the_sex){
