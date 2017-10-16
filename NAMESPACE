@@ -2,5 +2,6 @@
 
 export(my_csv_reader)
 export(read_excel_multi)
+export(save_as_csv)
 import(readxl)
 importFrom(utils,read.csv2)
