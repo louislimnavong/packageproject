@@ -15,7 +15,7 @@
 #' draw_a_name(the_name = "Vincent",the_sex = "M")
 
 draw_a_name <- function(the_name,the_sex){
-  prenoms %>%
+  prenoms::prenoms %>%
     filter(name == the_name,sex == the_sex) %>%
     group_by(year) %>%
     summarise(n=sum(n,na.rm=TRUE)) %>%
