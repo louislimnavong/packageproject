@@ -3,7 +3,11 @@
 #' @param dataset dataset to save as csv
 #' @param filename filename to save under
 #' @param row.names
-#' @param ...
+#' @param ... other potential variables
+#'
+#' @import assertthat
+#' @import forcats
+#' @import dplyr
 #'
 #' @return csv file
 #' @export

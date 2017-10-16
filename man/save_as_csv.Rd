@@ -11,7 +11,7 @@ save_as_csv(dataset, filename, row.names = FALSE, ...)
 
 \item{filename}{filename to save under}
 
-\item{...}{}
+\item{...}{other potential variables}
 }
 \value{
 csv file
